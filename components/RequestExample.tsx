@@ -43,22 +43,22 @@ const RequestExample = ({ baseEndpoint, defaultPaths} ) => {
     return (
         <>
             <script src="https://cdn.tailwindcss.com"></script>
-            <div className="mt-3 flex items-center justify-center rounded-t-lg border">
-                <div className="inline-block h-full">{baseURL + baseEndpoint}</div>
+            <div className="mt-3 flex flex-wrap items-center justify-center rounded-t-lg border">
+                <div className="ml-2 m-2 inline-block h-full">{baseURL + baseEndpoint}</div>
                 {defaultPaths.map((defaultPath, index) => (
                     <>
-                        <div className="inline-block h-full px-1">/</div>
+                        <div className="inline-block h-full px-0">/</div>
                         <input
                             defaultValue={defaultPath}
                             type="text"
-                            className="w-full sm:w-auto flex p-2"
+                            className="flex-auto flex p-1 m-1 rounded-md"
                             onChange={(event) => handleInputChange(index, event)}
                         />
                     </>
                 ))}
                 <button
                     onClick={handleCopyUrl}
-                    className="ml-2 p-2 border rounded hover:bg-gray-500"
+                    className="mx-2 p-1 border rounded hover:bg-gray-500"
                     title="Copy"
                 >
                     Copy
