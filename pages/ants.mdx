@@ -1,25 +1,52 @@
+import RequestExample from "../components/RequestExample";
+
 # Endpoints for /ants
 
 ## Genera
 ### `/ants/genera`
 `GET`: Returns a list of genera.
 
+<RequestExample
+    baseEndpoint={"/ants/genera"}
+    defaultPaths={[]}
+/>
+
 
 ## Species
 ### `/ants/species/{genus}`
 `GET`: Returns a list of species for the given genus.
+
+<RequestExample
+    baseEndpoint={"/ants/species"}
+    defaultPaths={["Myrmecocystus"]}
+/>
 
 
 ## Subspecies
 ### `/ants/subspecies/{genus}/{species}`
 `GET`: Returns a list of subspecies for the given species.
 
+<RequestExample
+    baseEndpoint={"/ants/subspecies"}
+    defaultPaths={["Acromyrmex", "coronatus"]}
+/>
+
 
 ## Species Details
 ### `/ants/species/{genus}/{species}`
 `GET`: Returns details for the given species.
 
+<RequestExample
+    baseEndpoint={"/ants/species"}
+    defaultPaths={["Camponotus", "fragilis"]}
+/>
+
 
 ## Subspecies Details
-### `/ants/subspecies/{genus}/{species}/{subspecies}`
+### `/ants/species/{genus}/{species}/{subspecies}`
 `GET`: Returns details for the given subspecies.
+
+<RequestExample
+    baseEndpoint={"/ants/species"}
+    defaultPaths={["Acromyrmex", "coronatus", "andicola"]}
+/>
