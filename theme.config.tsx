@@ -6,7 +6,7 @@ const config: DocsThemeConfig = {
   project: {
     link: 'https://github.com/cocdeshijie/antapi.org',
   },
-  docsRepositoryBase: 'https://github.com/cocdeshijie/antapi.org',
+  docsRepositoryBase: 'https://github.com/cocdeshijie/antapi.org/tree/main',
   footer: {
     text: 'Footer placeholder',
   },
