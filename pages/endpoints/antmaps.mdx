@@ -1,13 +1,30 @@
+import ImageRequestExample from "../../components/ImageRequestExample";
+
 # Endpoints for /antmaps
 
 ## Genus
 ### `/antmaps/{genus}`
 `GET`: Returns an antmaps image for the given genus.
 
+<ImageRequestExample
+    baseEndpoint="/antmaps"
+    defaultPaths={["Camponotus"]}
+/>
+
 ## Species
 ### `/antmaps/{genus}/{species}`
 `GET`: Returns an antmaps image for the given species.
 
+<ImageRequestExample
+    baseEndpoint="/antmaps"
+    defaultPaths={["Camponotus", "fragilis"]}
+/>
+
 ## Subspecies
 ### `/antmaps/{genus}/{species}/{subspecies}`
 `GET`: Returns an antmaps image for the given subspecies.
+
+<ImageRequestExample
+    baseEndpoint={"/antmaps"}
+    defaultPaths={["Acromyrmex", "coronatus", "rectispinus"]}
+/>
