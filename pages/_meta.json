@@ -1,8 +1,7 @@
 {
   "index": "Introduction",
-  "ants": "Ants",
-  "antmaps": "Antmaps",
-  "records": "Records",
+  "endpoints": "Endpoints",
+  "changelogs": "Change Logs",
   "about": {
     "title": "About",
     "type": "page"

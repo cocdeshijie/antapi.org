@@ -42,11 +42,10 @@ const RequestExample = ({ baseEndpoint, defaultPaths} ) => {
 
     return (
         <>
-            <script src="https://cdn.tailwindcss.com"></script>
             <div className="mt-3 flex flex-wrap items-center justify-center rounded-t-lg border">
-                <div className="ml-2 m-2 inline-block h-full">{baseURL + baseEndpoint}</div>
+                <div className="ml-2 inline-block h-full">{baseURL + baseEndpoint}</div>
                 {defaultPaths.map((defaultPath, index) => (
-                    <>
+                    <React.Fragment key={index}>
                         <div className="inline-block h-full px-0">/</div>
                         <input
                             defaultValue={defaultPath}
@@ -54,7 +53,7 @@ const RequestExample = ({ baseEndpoint, defaultPaths} ) => {
                             className="flex-auto flex p-1 m-1 rounded-md"
                             onChange={(event) => handleInputChange(index, event)}
                         />
-                    </>
+                    </React.Fragment>
                 ))}
                 <button
                     onClick={handleCopyUrl}
