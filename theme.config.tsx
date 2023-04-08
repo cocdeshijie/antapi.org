@@ -21,7 +21,11 @@ const config: DocsThemeConfig = {
     light: 35,
   },
   footer: {
-    text: 'Footer placeholder',
+    text: (
+        <p className="mt-6 text-xs">
+          © {new Date().getFullYear()} cocdeshijie.
+        </p>
+    ),
   }
 }
 
