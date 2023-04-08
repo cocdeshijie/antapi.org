@@ -6,5 +6,6 @@ const withNextra = require('nextra')({
 module.exports = withNextra({
   images: {
     domains: ['localhost'],
-  },
+  }
 })
+

@@ -22,7 +22,7 @@ const config: DocsThemeConfig = {
   },
   footer: {
     text: 'Footer placeholder',
-  },
+  }
 }
 
 export default config

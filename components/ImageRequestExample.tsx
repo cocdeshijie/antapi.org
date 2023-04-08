@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import Image from 'next/image'
+import Image from 'next/image';
 
 const ImageRequestExample = ({ baseEndpoint, defaultPaths} ) => {
     const [updatedPaths, setUpdatedPaths] = useState(defaultPaths);
 
-    const baseURL = "http://localhost:11100";
+    const baseURL = 'http://localhost:11100';
 
     const handleInputChange = (index, event) => {
         const newPaths = [...updatedPaths];
