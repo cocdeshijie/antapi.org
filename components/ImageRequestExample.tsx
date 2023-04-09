@@ -4,7 +4,7 @@ import Image from 'next/image';
 const ImageRequestExample = ({ baseEndpoint, defaultPaths} ) => {
     const [updatedPaths, setUpdatedPaths] = useState(defaultPaths);
 
-    const baseURL = 'http://localhost:11100';
+    const baseURL = 'https://api.antapi.org';
 
     const handleInputChange = (index, event) => {
         const newPaths = [...updatedPaths];

@@ -6,7 +6,7 @@ const RequestExample = ({ baseEndpoint, defaultPaths} ) => {
     const [result, setResult] = useState({});
     const [isLoading, setIsLoading] = useState(false);
 
-    const baseURL = 'http://localhost:11100';
+    const baseURL = 'https://api.antapi.org';
 
     const handleInputChange = (index, event) => {
         const newPaths = [...updatedPaths];
