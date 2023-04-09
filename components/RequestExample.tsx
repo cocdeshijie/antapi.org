@@ -15,6 +15,9 @@ const RequestExample = ({ baseEndpoint, defaultPaths} ) => {
     };
 
     const getFullURL = () => {
+        if (updatedPaths.length === 0) {
+            return baseURL + baseEndpoint;
+        }
         return baseURL + baseEndpoint + '/' + updatedPaths.join('/');
     }
 

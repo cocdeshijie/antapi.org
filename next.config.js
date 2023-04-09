@@ -5,7 +5,7 @@ const withNextra = require('nextra')({
 
 module.exports = withNextra({
   images: {
-    domains: ['localhost'],
+    domains: ['localhost', 'api.antapi.org'],
   }
 })
 
