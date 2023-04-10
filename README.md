@@ -1,4 +1,4 @@
-# This is a documentation for antapi.org
+# This is a documentation for api.antapi.org
 
 Made with [Nextra](https://nextra.site).
 
